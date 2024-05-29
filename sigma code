@@ -1,0 +1,246 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local BRODIDNOTCOOKWITHTHISONE = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Letsprint = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local Text = Instance.new("Frame")
+local Text_2 = Instance.new("TextLabel")
+local Title = Instance.new("TextLabel")
+local TextButton_3 = Instance.new("TextButton")
+
+--Properties:
+
+BRODIDNOTCOOKWITHTHISONE.Name = "BRO DID NOT COOK WITH THIS ONE"
+BRODIDNOTCOOKWITHTHISONE.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+BRODIDNOTCOOKWITHTHISONE.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = BRODIDNOTCOOKWITHTHISONE
+Main.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.31270358, 0, 0.24061434, 0)
+Main.Size = UDim2.new(0, 344, 0, 324)
+Main.Visible = false
+
+Letsprint.Name = "Lets print!"
+Letsprint.Parent = Main
+Letsprint.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Letsprint.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Letsprint.BorderSizePixel = 0
+Letsprint.Size = UDim2.new(0, 344, 0, 50)
+Letsprint.Font = Enum.Font.SourceSans
+Letsprint.Text = "Lets Print!"
+Letsprint.TextColor3 = Color3.fromRGB(200, 200, 200)
+Letsprint.TextScaled = true
+Letsprint.TextSize = 14.000
+Letsprint.TextWrapped = true
+
+TextBox.Name = "Text Box"
+TextBox.Parent = Main
+TextBox.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0668604672, 0, 0.216049388, 0)
+TextBox.Size = UDim2.new(0, 300, 0, 159)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = "Insert string here!"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(200, 200, 200)
+TextBox.TextSize = 18.000
+TextBox.TextWrapped = true
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0668604672, 0, 0.780864179, 0)
+TextButton.Size = UDim2.new(0, 170, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Print"
+TextButton.TextColor3 = Color3.fromRGB(200, 200, 200)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+TextButton_2.Parent = Main
+TextButton_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.651162803, 0, 0.780864179, 0)
+TextButton_2.Size = UDim2.new(0, 99, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Destroy"
+TextButton_2.TextColor3 = Color3.fromRGB(200, 200, 200)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+Text.Name = "Text"
+Text.Parent = BRODIDNOTCOOKWITHTHISONE
+Text.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Text.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Text.BorderSizePixel = 0
+Text.Position = UDim2.new(0, 0, 0.516239345, 0)
+Text.Size = UDim2.new(0, 241, 0, 83)
+Text.Visible = false
+
+Text_2.Name = "Text"
+Text_2.Parent = Text
+Text_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Text_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Text_2.BorderSizePixel = 0
+Text_2.Size = UDim2.new(0, 240, 0, 83)
+Text_2.Font = Enum.Font.SourceSans
+Text_2.Text = "Hey nigga, press right  control to open UI "
+Text_2.TextColor3 = Color3.fromRGB(200, 200, 200)
+Text_2.TextScaled = true
+Text_2.TextSize = 20.000
+Text_2.TextWrapped = true
+
+Title.Name = "Title"
+Title.Parent = Text
+Title.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(-0.012448133, 0, -0.578313231, 0)
+Title.Size = UDim2.new(0, 243, 0, 41)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Printing UI:"
+Title.TextColor3 = Color3.fromRGB(200, 200, 200)
+Title.TextScaled = true
+Title.TextSize = 20.000
+Title.TextWrapped = true
+
+TextButton_3.Parent = Text
+TextButton_3.BackgroundColor3 = Color3.fromRGB(200, 0, 0)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(-0.012448133, 0, 1, 0)
+TextButton_3.Size = UDim2.new(0, 98, 0, 34)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "Dismiss"
+TextButton_3.TextColor3 = Color3.fromRGB(200, 200, 200)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
+-- Scripts:
+
+local function YHLTO_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local button = script.Parent
+	local textbox = button.Parent["Text Box"]
+	
+	button.MouseButton1Click:Connect(function()
+		print(textbox.Text)
+	end)
+end
+coroutine.wrap(YHLTO_fake_script)()
+local function NDRHS_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local button = script.Parent
+	local gui = button.Parent.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		gui:Destroy()
+	end)
+end
+coroutine.wrap(NDRHS_fake_script)()
+local function QEILWIM_fake_script() -- Main.SmoothDrag 
+	local script = Instance.new('LocalScript', Main)
+
+	local Drag = script.Parent.Parent.Main
+	gsCoreGui = game:GetService("CoreGui")
+	gsTween = game:GetService("TweenService")
+	local UserInputService = game:GetService("UserInputService")
+		local dragging
+		local dragInput
+		local dragStart
+		local startPos
+		local function update(input)
+			local delta = input.Position - dragStart
+			local dragTime = 0.04
+			local SmoothDrag = {}
+			SmoothDrag.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+			local dragSmoothFunction = gsTween:Create(Drag, TweenInfo.new(dragTime, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), SmoothDrag)
+			dragSmoothFunction:Play()
+		end
+		Drag.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+				dragging = true
+				dragStart = input.Position
+				startPos = Drag.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragging = false
+					end
+				end)
+			end
+		end)
+		Drag.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		UserInputService.InputChanged:Connect(function(input)
+			if input == dragInput and dragging and Drag.Size then
+				update(input)
+			end
+		end)
+	
+end
+coroutine.wrap(QEILWIM_fake_script)()
+local function IPMLJ_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	local button = script.Parent
+	local frame = button.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		frame:Destroy()
+	end)
+end
+coroutine.wrap(IPMLJ_fake_script)()
+local function UHREW_fake_script() -- BRODIDNOTCOOKWITHTHISONE.LocalScript 
+	local script = Instance.new('LocalScript', BRODIDNOTCOOKWITHTHISONE)
+
+	local gui = script.Parent
+	
+	
+	gui.Text.Visible = true
+	task.wait(5)
+	gui.Text.Visible = false
+end
+coroutine.wrap(UHREW_fake_script)()
+local function VKXP_fake_script() -- BRODIDNOTCOOKWITHTHISONE.LocalScript 
+	local script = Instance.new('LocalScript', BRODIDNOTCOOKWITHTHISONE)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	function onKeyPress(inputObject, gameProcessedEvent)
+		if not gameProcessedEvent then
+			if inputObject.KeyCode == Enum.KeyCode.RightControl then 
+				if script.Parent.Main.Visible == false then
+					script.Parent.Main.Visible = true
+				else
+					script.Parent.Main.Visible = false
+				end
+			end
+		end
+	end
+	
+	UserInputService.InputBegan:connect(onKeyPress)
+end
+coroutine.wrap(VKXP_fake_script)()
