@@ -19,6 +19,7 @@ local TextButton_3 = Instance.new("TextButton")
 BRODIDNOTCOOKWITHTHISONE.Name = "BRO DID NOT COOK WITH THIS ONE"
 BRODIDNOTCOOKWITHTHISONE.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 BRODIDNOTCOOKWITHTHISONE.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+BRODIDNOTCOOKWITHTHISONE.ResetOnSpawn = false
 
 Main.Name = "Main"
 Main.Parent = BRODIDNOTCOOKWITHTHISONE
@@ -136,7 +137,7 @@ TextButton_3.TextWrapped = true
 
 -- Scripts:
 
-local function RVEZW_fake_script() -- TextButton.LocalScript 
+local function RZWINUQ_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local button = script.Parent
@@ -146,8 +147,8 @@ local function RVEZW_fake_script() -- TextButton.LocalScript
 		print(textbox.Text)
 	end)
 end
-coroutine.wrap(RVEZW_fake_script)()
-local function NGKCL_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(RZWINUQ_fake_script)()
+local function XAJMU_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local button = script.Parent
@@ -157,8 +158,8 @@ local function NGKCL_fake_script() -- TextButton_2.LocalScript
 		gui:Destroy()
 	end)
 end
-coroutine.wrap(NGKCL_fake_script)()
-local function HLCK_fake_script() -- Main.SmoothDrag 
+coroutine.wrap(XAJMU_fake_script)()
+local function GYZJUUS_fake_script() -- Main.SmoothDrag 
 	local script = Instance.new('LocalScript', Main)
 
 	local Drag = script.Parent.Parent.Main
@@ -201,8 +202,8 @@ local function HLCK_fake_script() -- Main.SmoothDrag
 		end)
 	
 end
-coroutine.wrap(HLCK_fake_script)()
-local function IILJ_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(GYZJUUS_fake_script)()
+local function CTFLE_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local button = script.Parent
@@ -212,8 +213,8 @@ local function IILJ_fake_script() -- TextButton_3.LocalScript
 		frame:Destroy()
 	end)
 end
-coroutine.wrap(IILJ_fake_script)()
-local function IEAL_fake_script() -- BRODIDNOTCOOKWITHTHISONE.LocalScript 
+coroutine.wrap(CTFLE_fake_script)()
+local function EXAINNW_fake_script() -- BRODIDNOTCOOKWITHTHISONE.LocalScript 
 	local script = Instance.new('LocalScript', BRODIDNOTCOOKWITHTHISONE)
 
 	local gui = script.Parent
@@ -222,10 +223,10 @@ local function IEAL_fake_script() -- BRODIDNOTCOOKWITHTHISONE.LocalScript
 	gui.Text.Visible = true
 	task.wait(5)
 	gui.Text.Visible = false
-	gui.ResetOnSpawn = false
+	
 end
-coroutine.wrap(IEAL_fake_script)()
-local function HHUT_fake_script() -- BRODIDNOTCOOKWITHTHISONE.LocalScript 
+coroutine.wrap(EXAINNW_fake_script)()
+local function CZRHQYD_fake_script() -- BRODIDNOTCOOKWITHTHISONE.LocalScript 
 	local script = Instance.new('LocalScript', BRODIDNOTCOOKWITHTHISONE)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -244,4 +245,4 @@ local function HHUT_fake_script() -- BRODIDNOTCOOKWITHTHISONE.LocalScript
 	
 	UserInputService.InputBegan:connect(onKeyPress)
 end
-coroutine.wrap(HHUT_fake_script)()
+coroutine.wrap(CZRHQYD_fake_script)()
