@@ -7,12 +7,13 @@ local BRODIDNOTCOOKWITHTHISONE = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local Letsprint = Instance.new("TextLabel")
 local TextBox = Instance.new("TextBox")
-local TextButton = Instance.new("TextButton")
-local TextButton_2 = Instance.new("TextButton")
+local Print = Instance.new("TextButton")
+local Destroy = Instance.new("TextButton")
+local Clear = Instance.new("TextButton")
 local Text = Instance.new("Frame")
 local Text_2 = Instance.new("TextLabel")
 local Title = Instance.new("TextLabel")
-local TextButton_3 = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
 
 --Properties:
 
@@ -28,7 +29,6 @@ Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 0
 Main.Position = UDim2.new(0.31270358, 0, 0.24061434, 0)
 Main.Size = UDim2.new(0, 344, 0, 324)
-Main.Visible = false
 
 Letsprint.Name = "Lets print!"
 Letsprint.Parent = Main
@@ -60,31 +60,47 @@ TextBox.TextWrapped = true
 TextBox.TextXAlignment = Enum.TextXAlignment.Left
 TextBox.TextYAlignment = Enum.TextYAlignment.Top
 
-TextButton.Parent = Main
-TextButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.0668604672, 0, 0.780864179, 0)
-TextButton.Size = UDim2.new(0, 170, 0, 50)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Print"
-TextButton.TextColor3 = Color3.fromRGB(200, 200, 200)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextWrapped = true
+Print.Name = "Print"
+Print.Parent = Main
+Print.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Print.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Print.BorderSizePixel = 0
+Print.Position = UDim2.new(0.0668604672, 0, 0.780864179, 0)
+Print.Size = UDim2.new(0, 131, 0, 50)
+Print.Font = Enum.Font.SourceSans
+Print.Text = "Print"
+Print.TextColor3 = Color3.fromRGB(200, 200, 200)
+Print.TextScaled = true
+Print.TextSize = 14.000
+Print.TextWrapped = true
 
-TextButton_2.Parent = Main
-TextButton_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.BorderSizePixel = 0
-TextButton_2.Position = UDim2.new(0.651162803, 0, 0.780864179, 0)
-TextButton_2.Size = UDim2.new(0, 99, 0, 50)
-TextButton_2.Font = Enum.Font.SourceSans
-TextButton_2.Text = "Destroy"
-TextButton_2.TextColor3 = Color3.fromRGB(200, 200, 200)
-TextButton_2.TextScaled = true
-TextButton_2.TextSize = 14.000
-TextButton_2.TextWrapped = true
+Destroy.Name = "Destroy"
+Destroy.Parent = Main
+Destroy.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Destroy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Destroy.BorderSizePixel = 0
+Destroy.Position = UDim2.new(0.752906978, 0, 0.780864179, 0)
+Destroy.Size = UDim2.new(0, 63, 0, 50)
+Destroy.Font = Enum.Font.SourceSans
+Destroy.Text = "Destroy"
+Destroy.TextColor3 = Color3.fromRGB(200, 200, 200)
+Destroy.TextScaled = true
+Destroy.TextSize = 14.000
+Destroy.TextWrapped = true
+
+Clear.Name = "Clear"
+Clear.Parent = Main
+Clear.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.473837197, 0, 0.780864179, 0)
+Clear.Size = UDim2.new(0, 72, 0, 50)
+Clear.Font = Enum.Font.SourceSans
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(200, 200, 200)
+Clear.TextScaled = true
+Clear.TextSize = 14.000
+Clear.TextWrapped = true
 
 Text.Name = "Text"
 Text.Parent = BRODIDNOTCOOKWITHTHISONE
@@ -122,23 +138,23 @@ Title.TextScaled = true
 Title.TextSize = 20.000
 Title.TextWrapped = true
 
-TextButton_3.Parent = Text
-TextButton_3.BackgroundColor3 = Color3.fromRGB(200, 0, 0)
-TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_3.BorderSizePixel = 0
-TextButton_3.Position = UDim2.new(-0.012448133, 0, 1, 0)
-TextButton_3.Size = UDim2.new(0, 98, 0, 34)
-TextButton_3.Font = Enum.Font.SourceSans
-TextButton_3.Text = "Dismiss"
-TextButton_3.TextColor3 = Color3.fromRGB(200, 200, 200)
-TextButton_3.TextScaled = true
-TextButton_3.TextSize = 14.000
-TextButton_3.TextWrapped = true
+TextButton.Parent = Text
+TextButton.BackgroundColor3 = Color3.fromRGB(200, 0, 0)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(-0.012448133, 0, 1, 0)
+TextButton.Size = UDim2.new(0, 98, 0, 34)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Dismiss"
+TextButton.TextColor3 = Color3.fromRGB(200, 200, 200)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
 
 -- Scripts:
 
-local function RZWINUQ_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
+local function RHMJ_fake_script() -- Print.LocalScript 
+	local script = Instance.new('LocalScript', Print)
 
 	local button = script.Parent
 	local textbox = button.Parent["Text Box"]
@@ -147,9 +163,9 @@ local function RZWINUQ_fake_script() -- TextButton.LocalScript
 		print(textbox.Text)
 	end)
 end
-coroutine.wrap(RZWINUQ_fake_script)()
-local function XAJMU_fake_script() -- TextButton_2.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_2)
+coroutine.wrap(RHMJ_fake_script)()
+local function GQXOGAT_fake_script() -- Destroy.LocalScript 
+	local script = Instance.new('LocalScript', Destroy)
 
 	local button = script.Parent
 	local gui = button.Parent.Parent
@@ -158,8 +174,8 @@ local function XAJMU_fake_script() -- TextButton_2.LocalScript
 		gui:Destroy()
 	end)
 end
-coroutine.wrap(XAJMU_fake_script)()
-local function GYZJUUS_fake_script() -- Main.SmoothDrag 
+coroutine.wrap(GQXOGAT_fake_script)()
+local function MMWLCXQ_fake_script() -- Main.SmoothDrag 
 	local script = Instance.new('LocalScript', Main)
 
 	local Drag = script.Parent.Parent.Main
@@ -202,9 +218,20 @@ local function GYZJUUS_fake_script() -- Main.SmoothDrag
 		end)
 	
 end
-coroutine.wrap(GYZJUUS_fake_script)()
-local function CTFLE_fake_script() -- TextButton_3.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_3)
+coroutine.wrap(MMWLCXQ_fake_script)()
+local function TPWMHJA_fake_script() -- Clear.LocalScript 
+	local script = Instance.new('LocalScript', Clear)
+
+	local button = script.Parent
+	local box = button.Parent["Text Box"]
+	
+	button.MouseButton1Click:Connect(function()
+		box.Text = ''
+	end)
+end
+coroutine.wrap(TPWMHJA_fake_script)()
+local function JVWNAJ_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
 
 	local button = script.Parent
 	local frame = button.Parent
@@ -213,8 +240,8 @@ local function CTFLE_fake_script() -- TextButton_3.LocalScript
 		frame:Destroy()
 	end)
 end
-coroutine.wrap(CTFLE_fake_script)()
-local function EXAINNW_fake_script() -- BRODIDNOTCOOKWITHTHISONE.LocalScript 
+coroutine.wrap(JVWNAJ_fake_script)()
+local function GKMQT_fake_script() -- BRODIDNOTCOOKWITHTHISONE.LocalScript 
 	local script = Instance.new('LocalScript', BRODIDNOTCOOKWITHTHISONE)
 
 	local gui = script.Parent
@@ -225,8 +252,8 @@ local function EXAINNW_fake_script() -- BRODIDNOTCOOKWITHTHISONE.LocalScript
 	gui.Text.Visible = false
 	
 end
-coroutine.wrap(EXAINNW_fake_script)()
-local function CZRHQYD_fake_script() -- BRODIDNOTCOOKWITHTHISONE.LocalScript 
+coroutine.wrap(GKMQT_fake_script)()
+local function QOND_fake_script() -- BRODIDNOTCOOKWITHTHISONE.LocalScript 
 	local script = Instance.new('LocalScript', BRODIDNOTCOOKWITHTHISONE)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -245,4 +272,4 @@ local function CZRHQYD_fake_script() -- BRODIDNOTCOOKWITHTHISONE.LocalScript
 	
 	UserInputService.InputBegan:connect(onKeyPress)
 end
-coroutine.wrap(CZRHQYD_fake_script)()
+coroutine.wrap(QOND_fake_script)()
